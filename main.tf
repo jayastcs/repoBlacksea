@@ -1,4 +1,11 @@
-added few lines from lin to update
+provider "azurerm" {
+  features {}
+}
 
-
-my files. 
+############################
+# Resource Group
+############################
+resource "azurerm_resource_group" "rg_ind" {
+  name     = "rg-ind"
+  location = "East US"
+}
